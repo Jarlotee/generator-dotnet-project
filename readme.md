@@ -1,5 +1,6 @@
 ## Dotnet Project Generator 
 [![Build Status](https://travis-ci.org/Jarlotee/generator-dotnet-project.svg?branch=master)](https://travis-ci.org/Jarlotee/generator-dotnet-project)
+![Dependency Status](https://david-dm.org/Jarlotee/generator-dotnet-project.svg)
 
 Helps you bootstrap your respository for a dotnet project.
 
