@@ -1,6 +1,6 @@
 {
   "name": "generator-dotnet-project",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Yeoman generator for dotnet projects",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
