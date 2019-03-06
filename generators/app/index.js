@@ -89,7 +89,6 @@ module.exports = class extends Generator {
 
     if (this.answers.createNugetConfig) {
       this.log('Adding nuget.config')
-      this.log(this.answers);
       const nugetUrl = url.parse(this.answers.nugetSource);
       this.fs.copyTpl(
         this.templatePath('nuget.template'),
