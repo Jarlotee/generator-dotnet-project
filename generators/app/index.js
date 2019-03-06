@@ -172,7 +172,7 @@ module.exports = class extends Generator {
       );
 
       if(this.fs.exists(appSettingsPath)) {
-        this.fs.extendJSON(appSettingsPath, { "Environment": "Local" });
+        this.fs.extendJSON(appSettingsPath, { "Environment": "local" });
       }
     }
 
