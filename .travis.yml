@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- node
+- lts/*
+script: true
+deploy:
+  provider: npm
+  email: jaredlotti@gmail.com
+  api_key:
+    secure: mPhV/ZHuK71d9SXUJSCz7acQG2FCCQpKMoIL5nyYjP1k7YaeElSeItOXAyX725ygKqh6YyjdJBDCTtd53RcC5Y/Q6+3X5QDcIoLaOADC4BaOD83g2On9TfXfur3B3om3YMab/7NN35hyhLgjxjjKIFVcOagjR+Vof/+T9Io6nh+FyTaweMeMIvCiCKme5ggucJ6hG1DOshPzsd3hrpcgxhXDOShV1y9O/jIuunHHGt2LZVw/LtlxaSDnZGSDAZpGCuOGVypSbf8gg4lXXSF4OQlceCSedyFRcLfVseOJ8ITN1iRvq11n/1RR2R9e5sfbjlspNqC7pKQC7HRyG1HvBqD0v31nYijguFrvG6i/Q5/YpdmGANj1J08GdHVRGokH60c33N3iOlA/8JpoL/jC3Jhyw8JeHXk0ogPpXCp5Tmr+avTAELIK0OzAoDIlfQSL/Ls8bgP7xNoZKYPjTSijV0SaltDuGGMBkDonvua5ArRA8Skcw6qJ18+hPVa9PzCdQEQRExmkiwZwNLnWjd+sVYP32zeQz946GuW/pkAgj8+o7MANfEAq8TuJ5AcXPBDW2/yRcprqbgHROgjwW1JRkwcUIOXJ+bdXmKKyJ+U4mqsKflWO8SdW7ABuSBvYmKcsddB2avkJ3N+vBtsel22Dw4FCbUOL4ypBf4em3mjECwo=
+  on:
+    tags: true
+    repo: Jarlotee/generator-dotnet-project
+    branch: master
