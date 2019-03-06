@@ -82,7 +82,7 @@ module.exports = class extends Generator {
     if (this.answers.createEditorConfig) {
       this.log('Adding .editorconfig')
       this.fs.copy(
-        this.templatePath('.editorconfig'),
+        this.templatePath('editorconfig.template'),
         this.destinationPath('.editorconfig')
       );
     }
@@ -92,7 +92,7 @@ module.exports = class extends Generator {
       this.log(this.answers);
       const nugetUrl = url.parse(this.answers.nugetSource);
       this.fs.copyTpl(
-        this.templatePath('nuget.config'),
+        this.templatePath('nuget.template'),
         this.destinationPath('nuget.config'),
         {
           label: nugetUrl.hostname,
@@ -103,13 +103,13 @@ module.exports = class extends Generator {
 
     this.log('Adding .vscode to .gitignore')
     this.fs.copy(
-      this.templatePath('.gitignore'),
+      this.templatePath('gitignore.template'),
       this.destinationPath('.gitignore')
     );
 
     this.log('Adding readme.md file');
     this.fs.copyTpl(
-      this.templatePath('readme.md'),
+      this.templatePath('readme.template'),
       this.destinationPath('readme.md'),
       {
         title: this.answers.projectName
